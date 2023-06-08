@@ -33,6 +33,14 @@ body{
 
 /* Barra de navegação
 */
+a:link, a:visited {
+	color: #b10333;
+	padding: 2px;
+}
+a:hover {
+	color: #e50040;
+}
+
 ul {
 	margin: 0;
 	padding: 0;
@@ -96,36 +104,36 @@ body.fotos #navegacao a#fotos;
  	/*background: yellow; */
  }
 
- #tres-colunas #primario {
+   /*#tres-colunas #primario {
  	width: 270px;
  	float:left;
  	margin: 0 0 20px 195px;
- 	background: blue;
- }
+	background: blue; 
+ }  */
  #primario {
  	width: 270px;
  	float:left;
  	margin: 0 0 20px 195px;
- 	background: blue;
- }
+	 /*background: blue;  */
+ }  
 
  #duas-colunas #primario {
  	width: 555px;
- 	/*float:left;
+ 	float:left;
  	margin: 0 0 20px 195px;
- 	background: blue; */
+/* 	background: blue; */
  }
   #uma-coluna #primario {
  	width: 750px;
  /*	float:left; */
  	margin: 0 0 20px 0;
- 	/*background: blue; */
+/* 	background: blue;  */
  }
   #secundario {
  	width: 270px;
  	float:left;
   	margin: 0 0 20px 15px;   
- 	background: green;
+ /* background: green; */
  }
 
  /*caixa*/
@@ -185,13 +193,79 @@ input.submit {
  /*	padding: 5px;  */
 }
 
-  /* Rodape */
 
+/*Formatar imagens*/
+/* img {
+	border: 2px solid #dfdfdf;
+}  */
+
+img.imagem-principal{
+	width: 98%;
+	border: 3px solid #dfdfdf;
+}
+
+/*Formatando cabeçalho */
+h3 {
+	text-transform: uppercase;
+	display: inline;
+	font-size: 0.8em;
+	padding: 3px;
+}
+
+
+.destaque h3 {
+	background: #b10333;
+  color: #fff; 
+}
+.entrevista h3 {
+	background: #de003e;
+	
+}
+
+/* Formatar nossa lista de notícias */
+#lista-noticias li {
+	padding: 2px;
+	border-bottom: 1px solid #ccc;
+	height: 62px;
+}
+
+#lista-noticias li a img{
+	float: left;
+	margin: 5px;
+}
+
+#lista-noticias li a{
+	text-decoration: none;
+/*	font-size: 0.8em; */
+
+}
+
+#lista-noticias li a h3{
+/*	text-decoration: none; */
+	font-size: 0.8em;
+	padding: 0;
+	color: #3e7ab9;
+
+}
+
+
+#lista-noticias li a p{
+/*	text-decoration: none;  */
+	font-size: 0.7em;
+	color: #000;
+
+}
+
+#lista-noticias li:hover{
+background: #eee;
+cursor: pointer;
+}
+  /* Rodape */
   #container-rodape {
   	background: #294c71;
   	padding: 20px;
   }
-  #rodape {
+    #rodape {
   	width: 750px;
   	margin: 0auto;
   	color: #fff;
